@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/42558806ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ------------------header-------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="p">P</span>
+                    <span class="o">o</span>
+                    <span class="r">r</span>
+                    <span class="t">t</span>
+                    <span class="f">f</span>
+                    <span class="o">o</span>
+                    <span class="l">l</span>
+                    <span class="i">i</span>
+                    <span class="o">o</span>
+                    <span class=".">.</span>
+                </div>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer/Data Anlayst</p>
+                <h1>Hi, I'm <span>Mohit</span><br>Kumar.</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------About Section--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                 <img src="images/user1.png">
+               </div>
+                <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>I am currently pursuing a Diploma in computer Science & Engineering from IFTM University Moradabad. I am passionate about learning and developing skills in Web developer,Data Analyst and Python etc with a strong dedication to both academics and practical application.I will be aim to build a successful career in Data Analyst.
+                  I enjoy working on projects and taks that challenge my problem-solving abilities and help me grow professionally and I am also motivated to contribute practical.  
+                  </p>
+                  <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web/App Development</li>
+                        <li><span>Data Analyst</span><br>Designing Attractive Dashboard</li>
+                        <li><span>Data Entry</span><br>English Typing and Hindi Typing</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                       <ul>
+                          <li><span>2024 - Current</span><br>Designing Web/App interface at Practice</li>
+                          <li><span>2023 - 2024</span><br>Data Entry at Brocodes Infotech</li>
+                          <li><span>2025 - Current</span><br>Python developer at Practice</li>
+                        </ul>
+                  </div> 
+                  <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2025</span><br>Polytechnic(CS) from IFTM University</li>
+                            <li><span>2018 - 2019</span><br>10th from Kundarki</li>
+                            <li><span>2020 - 2021</span><br>12th from Bilari</li>
+                         </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------Service----------------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i></i>
+                    <h2>Web Development</h2>
+                    <p>I have knowledge of Web Development and I creat to Attractive a website with my 1 year Experience.
+                    I made any website previous two months. So You chanse to me for creating a website.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Yes I am Expert in Data Analyst and I am also working on Freelancing. I have more skill for Data Analyst by using as Advance Excel,SQL,Python.
+                        So You give me a chanse to Data Analyst
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Data Entry</h2>
+                    <p> Exectly You identify me I am a Data Entry Operator. I have a Skiil of Data Entry as English Typing, Advance Excel.
+                        and I worked on Data Entry previous month at Brocodes Infotech and I have Experience one year of Data Entry.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- --------------Contact------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>  <i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p>  <i class="fa-solid fa-phone-square-alt"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                     <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>  
+                    <a href="images/MohitKumar_InternshalaResume (1).pdf" class="download-btn" download>Download CV</a>
+                </div>
+
+                  <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                     <input type="text"name="Name" placeholder="Your Name" required>
+                     <input type="email" name="Email" placeholder="Your Email" required>
+                     <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                      <button type="submit" class="submit-btn">Submit</button>
+                   </form><br>
+                   <span id="msg"></span>
+                   </div>
+                 </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright  <i class="fa-regular fa-copyright"></i>  Mohit. Made with<i class="fa-solid fa-heart"></i> by Easy Tutorials <i class="fa-solid fa-face-smile"></i></i></p>
+                </div>
+         </div>
+<script>
+var tablinks=document.getElementsByClassName("tab-links")
+var tabcontents=document.getElementsByClassName("tab-contents")
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add('active-tab')
+    
+}
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwHtlXg5Sf450eMDrRq3SRCnUrJVWoi88UMhV-Q8mq4VQnRlbcs-5vJsZa3ptSyLhsY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully."
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
